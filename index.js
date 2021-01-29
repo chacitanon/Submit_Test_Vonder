@@ -16,6 +16,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.use('/auth', authRoutes);
+app.get('/mock-data', (req, res) => {
+  require('./seeder/seeder');
+  res.send('Data imported');
+});
 
 app.listen(7000, () => {
   console.log('Running on port 7000');

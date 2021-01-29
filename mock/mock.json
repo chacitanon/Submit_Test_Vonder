@@ -1,0 +1,62 @@
+[
+  {
+    "name": "a",
+    "location": {
+      "latitude": "100.111111",
+      "longitude": "200.111111"
+    },
+    "price": 100,
+    "left": 10,
+    "isActive": true
+  },
+  {
+    "name": "b",
+    "location": {
+      "latitude": "100.222222",
+      "longitude": "200.222222"
+    },
+    "price": 200,
+    "left": 1,
+    "isActive": false
+  },
+  {
+    "name": "c",
+    "location": {
+      "latitude": "100.333333",
+      "longitude": "200.333333"
+    },
+    "price": 300,
+    "left": 2,
+    "isActive": false
+  },
+  {
+    "name": "d",
+    "location": {
+      "latitude": "100.444444",
+      "longitude": "200.444444"
+    },
+    "price": 400,
+    "left": 3,
+    "isActive": false
+  },
+  {
+    "name": "e",
+    "location": {
+      "latitude": "100.555555",
+      "longitude": "200.555555"
+    },
+    "price": 500,
+    "left": 4,
+    "isActive": true
+  },
+  {
+    "name": "f",
+    "location": {
+      "latitude": "100.666666",
+      "longitude": "200.666666"
+    },
+    "price": 600,
+    "left": 5,
+    "isActive": true
+  }
+]

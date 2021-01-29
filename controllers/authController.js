@@ -2,6 +2,20 @@ const bcryptjs = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const User = require("../models/User");
 
+const edit = async (req, res) => {
+  const userId = req.user._id;
+  const targetUser = await User.findOne({ _id: userId });
+  if (!targetUser) {
+    res.status(400).send({ message: "Sorry something went wrong" });
+  } else {
+    await targetUser.update({
+      ...req.body
+    });
+    res.status(200).send({ message: "updating success" });
+  }
+  res.status(200).send({ message: "update" });
+};
+
 const Register = async (req, res) => {
   const { username, password } = req.body;
   const targetUser = await User.findOne({ username });
@@ -61,4 +75,5 @@ const login = async (req, res) => {
 module.exports = {
   Register,
   login,
+  edit
 };
